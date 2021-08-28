@@ -38,10 +38,11 @@ public class StreamWordCount {
         //in stream data, there is NO GROUPBY SINCE IT IS UNBOUNDED STREAM, GROUPBY IS GROUPING SET OF DATA
         SingleOutputStreamOperator<Tuple2<String, Integer>> result = inputDataStream.flatMap(new MyFlatMapper())
                 .keyBy(value -> value.f0)
-                .sum(1);
+                .sum(1)
+                .setParallelism(2);
 
         //this print will not work unless we execute the task, not like batch processing
-        result.print();
+        result.print().setParallelism(1);
 
         //execute the task
         executionEnvironment.execute();
