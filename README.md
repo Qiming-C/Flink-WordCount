@@ -15,3 +15,13 @@ once netcat upon running, config the application CLI arguments
 if you are using IDEA, config command line arguments to `--host localhost --port portnumber` then run the application
 
 Finally, you can type any word at terminal then see the processing result in the console of application
+
+
+### Set datasource from Kafka
+
+make sure zookeeper and kafka server is up running 
+
+Run <br/>
+`./kafka-console-producer.sh --broker-list localhost:9092 --topic sensor`
+
+then run the application, then we can use producer console to produce data where flink is processing the data from kafka
