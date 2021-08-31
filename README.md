@@ -25,3 +25,7 @@ Run <br/>
 `./kafka-console-producer.sh --broker-list localhost:9092 --topic sensor`
 
 then run the application, then we can use producer console to produce data where flink is processing the data from kafka
+
+
+### Other Directory 
+otherthan the wordcount program, there are many example of streamApi code in the corresponding folder
