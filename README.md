@@ -28,4 +28,4 @@ then run the application, then we can use producer console to produce data where
 
 
 ### Other Directory 
-otherthan the wordcount program, there are many example of streamApi code in the corresponding folder
+Other than the wordCount program, there are many example of streamApi code in the corresponding folder
