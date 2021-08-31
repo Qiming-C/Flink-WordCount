@@ -46,6 +46,7 @@ public class StreamWordCount {
 
         //execute the task
         executionEnvironment.execute();
+
     }
 
     //custom class, implement FlatMapFunction interface
